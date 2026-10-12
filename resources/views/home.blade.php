@@ -82,7 +82,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-           <h1>{{ $username }}</h1>
+            <h1>{{ $username }}</h1>
             <p>{{ $last_login }}</p>
         </div>
     </section>
@@ -153,28 +153,40 @@
             </div>
 
             <div class="col-md-6">
+                {{-- Form Pertanyaan --}}
                 <div class="card">
-    <div class="card-body">
-        <h5 class="card-title">Form Pertanyaan</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Form Pertanyaan</h5>
 
-        <form action="{{ route('question.store') }}" method="POST">
-            @csrf
-            <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" name="nama">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control" name="email">
-            </div>
-            <div class="mb-3">
-                <label for="pertanyaan" class="form-label">Pertanyaan</label>
-                <textarea class="form-control" rows="4"></textarea name="pertanyaan">
-            </div>
-            <button type="submit" class="btn btn-primary">Kirim Pertanyaan</button>
-        </form>
-    </div>
-</div>
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+
+                        <form action="{{ route('question.store') }}" method="POST">
+                            @csrf
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="nama" name="nama" value="{{ old('nama') }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="email" name="email" value="{{ old('email') }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pertanyaan" class="form-label">Pertanyaan</label>
+                                <textarea class="form-control" id="pertanyaan" name="pertanyaan" rows="4">{{ old('pertanyaan') }}</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pertanyaan</button>
+                        </form>
+                    </div>
+                </div>
+
                 {{-- Alerts --}}
                 <div class="card ">
                     <div class="card-body">

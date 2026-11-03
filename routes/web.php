@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\UserController;
 //Route::get('/', function () {
 //   return view('welcome');
 //});
@@ -22,4 +23,8 @@ Route::prefix('admin')->group(function () {
 });
 
 Route::delete('/admin/pelanggan/{id}', [PelangganController::class, 'destroy'])->name('pelanggan.destroy');
+
+Route::resource('pelanggan', PelangganController::class);
+
+Route::resource('users', UserController::class);
 

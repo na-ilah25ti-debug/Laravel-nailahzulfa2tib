@@ -287,7 +287,7 @@
 											</div>
 											<div class="col-auto ms--2">
 												<h4 class="h6 mb-0">
-													<a href="#">Bonnie Green</a>
+													<a href="#">Liska Ismayani</a>
 												</h4>
 												<div class="d-flex align-items-center">
 													<div class="bg-danger dot rounded-circle me-1"></div>
@@ -319,7 +319,7 @@
 											</div>
 											<div class="col-auto ms--2">
 												<h4 class="h6 mb-0">
-													<a href="#">Neil Sims</a>
+													<a href="#">Liska Ismayani</a>
 												</h4>
 												<div class="d-flex align-items-center">
 													<div class="bg-danger dot rounded-circle me-1"></div>
@@ -462,9 +462,9 @@
 						<div class="profile-cover rounded-top" data-background="{{ asset('assets-admin/img') }}/profile-cover.jpg" style="background: url(&quot;{{ asset('assets-admin/img') }}/profile-cover.jpg&quot;);"></div>
 						<div class="card-body pb-5">
 							<img src="{{ asset('assets-admin/img') }}/team/profile-picture-1.jpg" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
-							<h4 class="h3">Neil Sims</h4>
+							<h4 class="h3">Liska Ismayani</h4>
 							<h5 class="fw-normal">Senior Software Engineer</h5>
-							<p class="text-gray mb-4">New York, USA</p>
+							<p class="text-gray mb-4">I'M FROM, Indonesia</p>
 							<a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center me-2" href="#">
 								<svg class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"></path></svg>
 								Connect

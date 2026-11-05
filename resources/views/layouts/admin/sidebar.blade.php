@@ -22,7 +22,7 @@
                             class="card-img-top rounded-circle border-white" alt="Bonnie Green">
                     </div>
                     <div class="d-block">
-                        <h2 class="h5 mb-3">Hi, Jane</h2>
+                        <h2 class="h5 mb-3">Hi, Liska</h2>
                         <a href="../../pages/examples/sign-in.html"
                             class="btn btn-secondary btn-sm d-inline-flex align-items-center">
                             <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"

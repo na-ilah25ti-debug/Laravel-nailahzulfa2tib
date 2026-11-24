@@ -44,6 +44,7 @@
                                         <th class="border-0">No</th>
                                         <th class="border-0">Name</th>
                                         <th class="border-0">Email</th>
+                                        <th class="border-0">Role</th>
                                         <th class="border-0 rounded-end">Action</th>
                                     </tr>
                                 </thead>
@@ -53,6 +54,7 @@
                                             <td>{{ $index + 1 }}</td>
                                             <td>{{ $item->name }}</td>
                                             <td>{{ $item->email }}</td>
+                                            <td>{{ $item->role }}</td>
                                             <td>
                                                 <a href="{{ route('users.edit', $item->id) }}"
                                                     class="btn btn-info btn-sm">
